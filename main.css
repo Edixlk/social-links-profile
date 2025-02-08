@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Customfont1;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: Customfont1;
+}
+
+
+:root  {
+    --White: hsl(0, 0%, 100%);
+    --Green: hsl(75, 94%, 57%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--Grey-900);
+}
+
+.container {
+    height: 100dvh;
+    display: grid;
+    place-content: center;
+}
+
+.social-med-crd {
+    color: white;
+    padding: 2.5em;
+    height: auto;
+    width:  350px;
+    border-radius: 15px;
+    background-color: var(--Grey-800);
+}
+
+.social-med-crd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* buttons for links */
+
+.usr-links {
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+.usr-links ol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    height: auto;
+}
+
+.pfp-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.avatar-img {
+    margin:1em;
+    border-radius: 50%;
+    max-width: 85px;
+}
+
+.usr-name {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.usr-location { 
+    color: var(--Green); 
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 1.4em;
+}
+
+.pfp-info p {
+    font-size: 14px;
+    color: var(--White);
+}
+
+.usr-links button {
+    font-weight: 600;
+    color: var(--White);
+    padding:  13px 18px ;
+    border-radius: 5px;
+    background-color: var(--Grey-700);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+
+    .social-med-crd {
+       padding:  clamp(1.5rem, 1rem, 4rem);
+        width: clamp(250px, 300px, 350px);
+    }
+    
+}
