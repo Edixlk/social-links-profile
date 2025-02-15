@@ -34,7 +34,7 @@ body {
 
 .social-med-crd {
     color: white;
-    padding: 2.5em;
+    padding: 1.7em 2.2em;
     height: auto;
     width:  350px;
     border-radius: 15px;
@@ -103,11 +103,3 @@ body {
     cursor: pointer;
 }
 
-@media screen and (max-width: 375px) {
-
-    .social-med-crd {
-       padding:  clamp(1.5rem, 1rem, 4rem);
-        width: clamp(250px, 300px, 350px);
-    }
-    
-}
