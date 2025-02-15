@@ -103,3 +103,9 @@ body {
     cursor: pointer;
 }
 
+
+.usr-links button:hover {
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
+
